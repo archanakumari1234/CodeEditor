@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+
+     <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- font-icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main section of the page -->
+    <section class="container">
+        <div class="btn-container">
+            <li>
+                <h3>Code Editor</h3>
+            <li>
+                <div class="toggle-btn">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle-label">
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
+            </li>
+        </div>
+
+        <!-- Coding part section -->
+        <div class="main">
+            <div class="left">
+                <label><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea onkeyup="run()" spellcheck="false" id="html-code"></textarea>
+
+
+                <label for=""><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea onkeyup="run()" spellcheck="false" id="css-code"></textarea>
+
+
+                <label for=""><i class="fa-brands fa-js"></i>JavaScript</label>
+                <textarea onkeyup="run()" spellcheck="false" id="js-code"></textarea>
+            </div>
+
+            <div class="right">
+                <label><i class="fa-solid fa-play"></i>Output</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JavaScript part -->
+    <script src="script.js"></script>
+</body>
+
+</html>

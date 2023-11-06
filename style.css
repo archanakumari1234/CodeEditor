@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    color: white
+}
+
+.container {
+    background: #383434;
+    text-align: center;
+    padding: 10px;
+}
+
+.container li {
+    font-weight: 700;
+    padding: 1rem;
+    display: inline;
+}
+
+.toggle-label{
+    width: 3rem;
+    height: 2rem;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 5rem;
+    
+}
+#checkbox{
+    visibility: hidden;
+}
+.toggle-ball{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #0b060a;
+    display: inline-block;
+    position: absolute;
+    left: .2rem;
+    transition: all .2s linear;
+}
+
+.toggle-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(1rem);
+    background-color: #ffffff; 
+}
+#checkbox:checked + .toggle-label{
+    background-color: #212121; 
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-container li {
+    font-size: 2rem;
+}
+
+.main {
+    background-color: #060320;
+    text-align: start;
+    display: flex;
+    margin-top: 10px;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+label i {
+    padding-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background-color: #212121;  
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 95%;
+    background-color: white;
+}
